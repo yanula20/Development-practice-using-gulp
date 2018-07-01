@@ -110,14 +110,14 @@ gulp.task('img', function() {
 //---------------------------------------------------------------------
 
 gulp.task('watch', function() {
-  browserSync.init({
-    server: './output',
-    open: false
-  });
-  gulp.watch(src.js,['js']);
-  gulp.watch(src.sass,['sass']);
-  gulp.watch(src.img,['img']);
-  gulp.watch(output.html).on('change', browserSync.reload);
+    browserSync.init({
+        // proxy: 'localhost',
+        server: './output'
+    });
+    gulp.watch(src.js, ['js']);
+    gulp.watch(src.sass, ['sass']);
+    gulp.watch(src.img, ['img']);
+    gulp.watch(output.html).on('change', browserSync.reload);
 });
 
 //---------------------------------------------------------------------
