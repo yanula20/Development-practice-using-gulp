@@ -1,0 +1,22 @@
+$color: 'red';
+
+body {
+    background: yellow;
+}
+
+h1 {
+    background: silver;
+    padding: 5px;
+}
+
+.container {
+    h1 {
+        color: blue;
+        padding: 10px;
+    }
+    h2 {
+        color: blue;
+        background: gray;
+        border-radius: 5px;
+    }
+}

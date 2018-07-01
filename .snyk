@@ -1,0 +1,112 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:braces:20180219':
+    - gulp-watch > anymatch > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.537Z'
+    - gulp-imagemin > imagemin-gifsicle > gifsicle > bin-build > decompress > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.537Z'
+    - gulp-imagemin > imagemin-gifsicle > gifsicle > bin-build > download > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - gulp-imagemin > imagemin-gifsicle > gifsicle > bin-build > download > gulp-decompress > decompress > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - gulp-imagemin > imagemin-gifsicle > gifsicle > bin-wrapper > download > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - gulp-imagemin > imagemin-gifsicle > gifsicle > bin-wrapper > download > gulp-decompress > decompress > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - gulp-imagemin > imagemin-jpegtran > jpegtran-bin > bin-build > decompress > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - gulp-imagemin > imagemin-jpegtran > jpegtran-bin > bin-build > download > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - gulp-imagemin > imagemin-jpegtran > jpegtran-bin > bin-build > download > gulp-decompress > decompress > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - gulp-imagemin > imagemin-jpegtran > jpegtran-bin > bin-wrapper > download > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - gulp-imagemin > imagemin-jpegtran > jpegtran-bin > bin-wrapper > download > gulp-decompress > decompress > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - gulp-imagemin > imagemin-optipng > optipng-bin > bin-build > decompress > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - gulp-imagemin > imagemin-optipng > optipng-bin > bin-build > download > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - gulp-imagemin > imagemin-optipng > optipng-bin > bin-build > download > gulp-decompress > decompress > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - gulp-imagemin > imagemin-optipng > optipng-bin > bin-wrapper > download > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - gulp-imagemin > imagemin-optipng > optipng-bin > bin-wrapper > download > gulp-decompress > decompress > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - imagemin-pngquant > pngquant-bin > bin-wrapper > download > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - imagemin-pngquant > pngquant-bin > bin-wrapper > download > gulp-decompress > decompress > vinyl-fs > glob-stream > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - browser-sync > chokidar > anymatch > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+    - browser-sync > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+  'npm:lodash:20180130':
+    - browser-sync > easy-extender > lodash:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+  'npm:ua-parser-js:20180227':
+    - browser-sync > ua-parser-js:
+        reason: None given
+        expires: '2018-07-30T18:31:19.538Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - gulp-sass > node-sass > request > hawk > boom > hoek:
+        patched: '2018-06-30T17:08:28.896Z'
+    - gulp-sass > node-sass > request > hawk > sntp > hoek:
+        patched: '2018-06-30T17:08:28.896Z'
+    - gulp-sass > node-sass > request > hawk > cryptiles > boom > hoek:
+        patched: '2018-06-30T17:08:28.896Z'
+    - gulp-sass > node-sass > node-gyp > request > hawk > hoek:
+        patched: '2018-06-30T17:08:28.896Z'
+    - gulp-sass > node-sass > node-gyp > request > hawk > boom > hoek:
+        patched: '2018-06-30T17:08:28.896Z'
+    - gulp-sass > node-sass > node-gyp > request > hawk > sntp > hoek:
+        patched: '2018-06-30T17:08:28.896Z'
+    - gulp-sass > node-sass > node-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2018-06-30T17:08:28.896Z'
+    - gulp-sass > node-sass > request > hawk > hoek:
+        patched: '2018-06-30T17:08:28.896Z'
+  'npm:tunnel-agent:20170305':
+    - gulp-sass > node-sass > request > tunnel-agent:
+        patched: '2018-06-30T17:08:28.896Z'
+      gulp-imagemin > imagemin-gifsicle > gifsicle > bin-wrapper > download > caw > tunnel-agent:
+        patched: '2018-06-30T18:28:16.116Z'
+    - gulp-imagemin > imagemin-jpegtran > jpegtran-bin > bin-build > download > caw > tunnel-agent:
+        patched: '2018-06-30T18:28:16.116Z'
+    - gulp-imagemin > imagemin-jpegtran > jpegtran-bin > bin-wrapper > download > caw > tunnel-agent:
+        patched: '2018-06-30T18:28:16.116Z'
+    - gulp-imagemin > imagemin-optipng > optipng-bin > bin-build > download > caw > tunnel-agent:
+        patched: '2018-06-30T18:28:16.116Z'
+    - gulp-imagemin > imagemin-optipng > optipng-bin > bin-wrapper > download > caw > tunnel-agent:
+        patched: '2018-06-30T18:28:16.116Z'
+    - imagemin-pngquant > pngquant-bin > bin-wrapper > download > caw > tunnel-agent:
+        patched: '2018-06-30T18:28:16.116Z'
+    - gulp-imagemin > imagemin-gifsicle > gifsicle > bin-build > download > caw > tunnel-agent:
+        patched: '2018-06-30T18:28:16.116Z'
+  'npm:debug:20170905':
+    - browser-sync > localtunnel > debug:
+        patched: '2018-06-30T18:28:16.116Z'
