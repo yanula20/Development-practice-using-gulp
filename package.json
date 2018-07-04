@@ -7,7 +7,11 @@
     "test": "snyk test",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "js" : "gulp js",
+    "sass": "gulp sass",
+    "watch": "gulp watch",
+    "image": "gulp img"
   },
   "author": "",
   "license": "ISC",

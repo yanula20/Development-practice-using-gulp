@@ -4,7 +4,7 @@ function run() {
 
 function call_it(name) {
     console.log(name);
-    alert('Dog');
+    alert('Doggy');
 }
 
 call_it(name);

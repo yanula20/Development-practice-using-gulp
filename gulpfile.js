@@ -22,19 +22,21 @@ var gulp          = require("gulp"),
 //---------------------------------------------------------------------
 
 var src = {
-  sass: "src/sass/**/*.scss",
-  js: "src/js/**/*.jss",
-  img: "src/img/*"
-}
+    sass: "src/sass/**/*.scss",
+    js: "src/js/**/*.js",
+    img: "src/img/*"
+};
 
 var output = {
-  js: "output/js",
-  css: "output/css",
-  img: "output/img",
-  html: "output/**/*.html",
-  min_css: "app.min.css",
-  min_js: "app.min.js"
-}
+    js: "output/js",
+    css: "output/css",
+    img: "output/img/",
+    html: "output/**/*.html",
+    min_css: 'app.min.css',
+    min_js: 'app.min.js'
+};
+
+
 //---------------------------------------------------------------------
 //Error Handler
 //---------------------------------------------------------------------
@@ -112,7 +114,8 @@ gulp.task('img', function() {
 gulp.task('watch', function() {
     browserSync.init({
         // proxy: 'localhost',
-        server: './output'
+        server: './output',
+        open: false
     });
     gulp.watch(src.js, ['js']);
     gulp.watch(src.sass, ['sass']);
